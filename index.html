@@ -7,6 +7,46 @@
     <title>Happy Birthday</title>
 </head>
 <body>
+    <img src="Assets/hbd1.jpeg" id="st-img" alt="Happy Birthday papa">
+    <embed src="Assets/Poovukku Porantha Naalu.mp3" loop="true" autostart="true" width="2" height="o">
     <h1> Happy Birthday to <br> Magi Papa</h1>
+    <img src="Assets/hbd.jpg" id="rotate-img" alt="hbd">
+    
+    <div class="scrolling-text">
+        என் இனிய <br>
+            இனி பாப்பாவுக்கு <br>
+        தங்கள் மனம் கவர்ந்த மண்ணவனின்<br>
+            இனிய பிறந்தநாள் வாழ்த்துக்கள் 💝💝... 
+    </div>
+
+<style>
+  .scrolling-text {
+    position: relative;
+    white-space: nowrap;
+    animation: scroll-left 20s linear infinite;
+    color:darkorange;
+    font-family: cursive;
+    font-size: 40px;
+  }
+
+  @keyframes scroll-left {
+    from {
+     left: 100%;
+     width: 100%; 
+    }
+    to {
+      left: -100%;
+      width: 100%;
+    }
+  }
+</style>
+
+<script>
+  function scrollleft() {
+    document.getElementById("scrolling-text").style.left = '100%';
+    setTimeout(scrollleft, 25);
+  }
+   scrollleft();
+</script>
 </body>
 </html>

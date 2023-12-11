@@ -2,20 +2,37 @@ body{
 
   align-items: center;
   text-align: center;
-  width: 600px;
+  width: 60%;
   position: relative;
   margin: auto;
   background: #E4F6F9;
 }
 
-h2 {
+h1 {
   text-decoration: underline;
   font-family: cursive;
   color: darkorange;
 }
-img{
+#st-img{
   border: none;
-  border-radius: 5px;
+  border-radius: 20%;
+  margin-top: 50px;
+  max-width: 100%;
+}
+
+#rotate-img{
+    width: 100%;
+    border-radius: 50%;
+    animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 h3 {
